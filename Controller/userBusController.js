@@ -27,7 +27,6 @@ const bookTicket = async ( req, res ) => {
             return res.json({message : "Bus does not exist"});
 
         const bookBus = new bookingModel({
-            bookingId : uuidv4(),
             userId,
             name : userExist.name,
             busId,
